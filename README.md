@@ -73,12 +73,10 @@ Vagrant.configure("2") do |config|
    ...
 
    config.vm.provision "ansible" do |ansible|
-     ansible.verbose = "vv"
-     ansible.become = true
-     ansible.become_user = "root"
-     ansible.raw_arguments = ["-e", "@local.vars", "--vault-password-file=vault.pwf"]
-     ansible.playbook = "playbook.yml"
-     #ansible.ask_vault_pass = true
+      ansible.become = true
+      ansible.become_user = "root"
+      ansible.playbook = "playbook.yml"
+      ansible.extra_vars = { ansible_python_interpreter:"/usr/bin/python3" }     
    end
 
 end
