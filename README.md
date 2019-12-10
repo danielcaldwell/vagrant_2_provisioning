@@ -87,6 +87,5 @@ end
 The best part with this method is that it will work with multiple infrastructures, and it you can run it on that infrastructure just by changing the 
 hosts. 
 
-## Provisioning with an Ansible Script
 
 
