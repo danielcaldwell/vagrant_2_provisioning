@@ -39,8 +39,8 @@ vagrant ssh
 With these commands you can run the deploy script. This is of great use to test the deploy script before using the shell 
 provisioner. Once it is done, you can switch it. 
 
-
-## Provisioning with a Shell Script
+ 
+## Shell Provisioning
 
 Shell scripts are the simplest way to provision a vagrant machine. You can install using inline scripting, stored in the
 Vagrang file, but the reality is, it is much better to have it as a shell script file. This will allow you to create 
@@ -57,16 +57,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-
-
-
-### Add the shell script provisioner
-
-
-
-
-
-## Provisioning with an Ansible Script
+## Ansible Provisioning
 
 Ansible, like Puppet, is a software that assists with infrastruction management. Using ansible allows you to 
 control your infrastructure in *code* which allows changes to infrastructure to be managed at an enterprise 
@@ -93,7 +84,8 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-
+The best part with this method is that it will work with multiple infrastructures, and it you can run it on that infrastructure just by changing the 
+hosts. 
 
 ## Provisioning with an Ansible Script
 
