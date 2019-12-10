@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks: 
+   - name: Install nginx
+     apt: 
+        pkg: nginx
+        update_cache: yes
+   - name: start nginx service
+     service: 
+        name: nginx
+        state: started
+
