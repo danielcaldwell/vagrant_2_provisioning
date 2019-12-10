@@ -59,13 +59,13 @@ end
 
 ## Ansible Provisioning
 
-Ansible, like Puppet, is a software that assists with infrastruction management. Using ansible allows you to 
+Ansible, like Puppet, nd Chef, is a software that assists with infrastruction management. Using ansible allows you to 
 control your infrastructure in *code* which allows changes to infrastructure to be managed at an enterprise 
 level. 
 
 First, [install ansible for your platform](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-the-control-node). 
 
-Your host machine, the one running the provisioning operates as the ansible control machine. 
+Your host machine, the one running the provisioning, operates as the ansible control machine. 
 
 ```
 Vagrant.configure("2") do |config|
